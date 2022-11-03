@@ -1,6 +1,19 @@
 @import '../../styles/settings.scss';
 nav {
 	background: darken($color-dark, 3%);
+	ul {
+		display: flex;
+		list-style: none;
+	}
+
+	li {
+		padding: 0 20px;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
 }
 
 .nav {
@@ -20,16 +33,6 @@ nav {
 	margin: 6px 0;
 }
 
-ul {
-	display: flex;
-	list-style: none;
-}
-
-li {
-	padding: 0 20px;
-}
-
-a {
-	text-decoration: none;
-	color: white;
+.linkActive {
+	color: $color-warning;
 }
